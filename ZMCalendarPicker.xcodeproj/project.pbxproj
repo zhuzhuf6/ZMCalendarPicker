@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		351929C01BF078DB00973B6E /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 351929BF1BF078DB00973B6E /* icon.png */; };
 		B18319921BF00CBC004E314C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B18319911BF00CBC004E314C /* main.m */; };
 		B18319951BF00CBC004E314C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B18319941BF00CBC004E314C /* AppDelegate.m */; };
 		B18319981BF00CBC004E314C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B18319971BF00CBC004E314C /* ViewController.m */; };
@@ -17,7 +18,6 @@
 		B18319CB1BF00D5F004E314C /* UIView+FRAME.m in Sources */ = {isa = PBXBuildFile; fileRef = B18319C61BF00D5F004E314C /* UIView+FRAME.m */; };
 		B18319CC1BF00D5F004E314C /* bt_next@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B18319C81BF00D5F004E314C /* bt_next@2x.png */; };
 		B18319CD1BF00D5F004E314C /* bt_previous@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B18319C91BF00D5F004E314C /* bt_previous@2x.png */; };
-		B18319CE1BF00D5F004E314C /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B18319CA1BF00D5F004E314C /* icon.png */; };
 		B18319D11BF00D9C004E314C /* NSDateComponents+DealDate.m in Sources */ = {isa = PBXBuildFile; fileRef = B18319D01BF00D9C004E314C /* NSDateComponents+DealDate.m */; };
 		B18319D41BF00EAC004E314C /* UIColor+HEXString.m in Sources */ = {isa = PBXBuildFile; fileRef = B18319D31BF00EAC004E314C /* UIColor+HEXString.m */; };
 		B18319D71BF00ED2004E314C /* ZMCalendarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B18319D61BF00ED2004E314C /* ZMCalendarCell.m */; };
@@ -42,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		351929BF1BF078DB00973B6E /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		B183198D1BF00CBC004E314C /* ZMCalendarPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZMCalendarPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B18319911BF00CBC004E314C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B18319931BF00CBC004E314C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -61,7 +62,6 @@
 		B18319C61BF00D5F004E314C /* UIView+FRAME.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FRAME.m"; sourceTree = "<group>"; };
 		B18319C81BF00D5F004E314C /* bt_next@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bt_next@2x.png"; sourceTree = "<group>"; };
 		B18319C91BF00D5F004E314C /* bt_previous@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bt_previous@2x.png"; sourceTree = "<group>"; };
-		B18319CA1BF00D5F004E314C /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ZMCalendarPicker/Resource/icon.png; sourceTree = "<group>"; };
 		B18319CF1BF00D9C004E314C /* NSDateComponents+DealDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDateComponents+DealDate.h"; sourceTree = "<group>"; };
 		B18319D01BF00D9C004E314C /* NSDateComponents+DealDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDateComponents+DealDate.m"; sourceTree = "<group>"; };
 		B18319D21BF00EAC004E314C /* UIColor+HEXString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HEXString.h"; sourceTree = "<group>"; };
@@ -136,7 +136,7 @@
 		B18319901BF00CBC004E314C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				B18319CA1BF00D5F004E314C /* icon.png */,
+				351929BF1BF078DB00973B6E /* icon.png */,
 				B18319911BF00CBC004E314C /* main.m */,
 			);
 			name = "Supporting Files";
@@ -299,7 +299,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B18319CD1BF00D5F004E314C /* bt_previous@2x.png in Resources */,
-				B18319CE1BF00D5F004E314C /* icon.png in Resources */,
+				351929C01BF078DB00973B6E /* icon.png in Resources */,
 				B183199D1BF00CBC004E314C /* Assets.xcassets in Resources */,
 				B183199B1BF00CBC004E314C /* Main.storyboard in Resources */,
 				B18319CC1BF00D5F004E314C /* bt_next@2x.png in Resources */,
