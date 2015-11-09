@@ -1,25 +1,105 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="nFe-uR-FmK">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QAr-oE-Bol">
+                                <rect key="frame" x="0.0" y="74" width="320" height="120"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d9b-B4-vLN">
+                                        <rect key="frame" x="60" y="45" width="200" height="30"/>
+                                        <color key="backgroundColor" red="0.1843137255" green="0.79607843140000001" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="calendarWithMask">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="calendarWithMask:" destination="BYZ-38-t0r" eventType="touchUpInside" id="agB-2N-KDL"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ncc-ru-ri2">
+                                        <rect key="frame" x="60" y="83" width="200" height="29"/>
+                                        <color key="backgroundColor" red="0.1843137255" green="0.79607843140000001" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="calendarWithVarietyStatus">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="calendarWithVarietyStatus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X79-M4-q7f"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dpJ-hF-9Sg">
+                                        <rect key="frame" x="60" y="8" width="200" height="29"/>
+                                        <color key="backgroundColor" red="0.1843137255" green="0.79607843140000001" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="0Hn-bJ-lvq"/>
+                                        </constraints>
+                                        <state key="normal" title="calendarWithOutMask">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="calendarWithOutMask:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fq7-eq-f1V"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Ncc-ru-ri2" firstAttribute="top" secondItem="d9b-B4-vLN" secondAttribute="bottom" constant="8" id="0Wy-FW-5C2"/>
+                                    <constraint firstItem="Ncc-ru-ri2" firstAttribute="centerX" secondItem="QAr-oE-Bol" secondAttribute="centerX" id="14P-3Z-e4K"/>
+                                    <constraint firstItem="dpJ-hF-9Sg" firstAttribute="top" secondItem="QAr-oE-Bol" secondAttribute="top" constant="8" id="ALb-Mc-S6u"/>
+                                    <constraint firstItem="d9b-B4-vLN" firstAttribute="top" secondItem="dpJ-hF-9Sg" secondAttribute="bottom" constant="8" id="B9j-cG-bdy"/>
+                                    <constraint firstItem="dpJ-hF-9Sg" firstAttribute="centerX" secondItem="QAr-oE-Bol" secondAttribute="centerX" id="EXn-lp-79T"/>
+                                    <constraint firstItem="Ncc-ru-ri2" firstAttribute="width" secondItem="dpJ-hF-9Sg" secondAttribute="width" id="GeA-Ds-tR0"/>
+                                    <constraint firstItem="d9b-B4-vLN" firstAttribute="width" secondItem="dpJ-hF-9Sg" secondAttribute="width" id="SyF-DX-ZXW"/>
+                                    <constraint firstAttribute="height" constant="120" id="TQ9-Ai-WxK"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ncc-ru-ri2" secondAttribute="bottom" constant="8" id="ly1-TO-muU"/>
+                                    <constraint firstItem="Ncc-ru-ri2" firstAttribute="height" secondItem="dpJ-hF-9Sg" secondAttribute="height" id="oy4-ve-afM"/>
+                                    <constraint firstItem="d9b-B4-vLN" firstAttribute="centerX" secondItem="QAr-oE-Bol" secondAttribute="centerX" id="t43-Je-cWC"/>
+                                    <constraint firstItem="d9b-B4-vLN" firstAttribute="height" secondItem="dpJ-hF-9Sg" secondAttribute="height" id="xOl-k0-Qor"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="QAr-oE-Bol" secondAttribute="trailing" id="EWs-Kn-qcI"/>
+                            <constraint firstItem="QAr-oE-Bol" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Vvt-Ex-6Ak"/>
+                            <constraint firstItem="QAr-oE-Bol" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="Wcf-Fx-ZCZ"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="eJ0-Db-Xga"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="90" y="528"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Xe0-EI-0KU">
+            <objects>
+                <navigationController id="nFe-uR-FmK" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fpM-AL-IMc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Wnu-Gg-u1h"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gbU-fm-nfG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-324" y="528"/>
         </scene>
     </scenes>
 </document>

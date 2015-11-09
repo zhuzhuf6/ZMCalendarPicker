@@ -10,10 +10,27 @@
 
 @class ZMCalendarPicker;
 
+/**
+ *  block返回结果
+ *
+ *  @param chooseDate 选择的日期
+ *  @param status     返回选择日期的状态， 在开始日期-结束日期之间 == 0，  在开始日期-结束日期之外 == 1
+ *                    其他值：如果成功开启选择模式，chooseDateArray 的返回的值为 数组index + 10;
+ *                    chooseDateArray中第一组数组返回为10，第二组为11，依次+1
+ */
 typedef void(^chooseDateBlock)(NSDate *chooseDate, NSInteger status);
 
 @protocol ZMCalendarPickerDelegate <NSObject>
 @optional
+/**
+ *  代理返还结果
+ *
+ *  @param calendarPicker 日历
+ *  @param chooseDate     选择的日期
+ *  @param status         返回选择日期的状态， 在开始日期-结束日期之间 == 0，  在开始日期-结束日期之外 == 1
+ *                        其他值：如果成功开启选择模式，chooseDateArray 的返回的值为 数组index + 10;
+ *                        chooseDateArray中第一组数组返回为10，第二组为11，依次+1
+ */
 - (void)calendarPicker:(ZMCalendarPicker *)calendarPicker DidChooseDate:(NSDate *)chooseDate withStatus:(NSInteger)status;
 
 @end
@@ -71,4 +88,6 @@ typedef void(^chooseDateBlock)(NSDate *chooseDate, NSInteger status);
  */
 @property (nonatomic, copy) chooseDateBlock chooseDateBlock;
 
+
+- (void)showInView:(UIView *)view andResult:(chooseDateBlock)chooseDate;
 @end

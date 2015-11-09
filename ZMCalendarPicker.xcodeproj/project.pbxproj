@@ -12,7 +12,6 @@
 		B18319981BF00CBC004E314C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B18319971BF00CBC004E314C /* ViewController.m */; };
 		B183199B1BF00CBC004E314C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B18319991BF00CBC004E314C /* Main.storyboard */; };
 		B183199D1BF00CBC004E314C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B183199C1BF00CBC004E314C /* Assets.xcassets */; };
-		B18319A01BF00CBC004E314C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B183199E1BF00CBC004E314C /* LaunchScreen.storyboard */; };
 		B18319AB1BF00CBC004E314C /* ZMCalendarPickerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B18319AA1BF00CBC004E314C /* ZMCalendarPickerTests.m */; };
 		B18319B61BF00CBD004E314C /* ZMCalendarPickerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B18319B51BF00CBD004E314C /* ZMCalendarPickerUITests.m */; };
 		B18319CB1BF00D5F004E314C /* UIView+FRAME.m in Sources */ = {isa = PBXBuildFile; fileRef = B18319C61BF00D5F004E314C /* UIView+FRAME.m */; };
@@ -51,7 +50,6 @@
 		B18319971BF00CBC004E314C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		B183199A1BF00CBC004E314C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B183199C1BF00CBC004E314C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B183199F1BF00CBC004E314C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B18319A11BF00CBC004E314C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B18319A61BF00CBC004E314C /* ZMCalendarPickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZMCalendarPickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B18319AA1BF00CBC004E314C /* ZMCalendarPickerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMCalendarPickerTests.m; sourceTree = "<group>"; };
@@ -63,7 +61,7 @@
 		B18319C61BF00D5F004E314C /* UIView+FRAME.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FRAME.m"; sourceTree = "<group>"; };
 		B18319C81BF00D5F004E314C /* bt_next@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bt_next@2x.png"; sourceTree = "<group>"; };
 		B18319C91BF00D5F004E314C /* bt_previous@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bt_previous@2x.png"; sourceTree = "<group>"; };
-		B18319CA1BF00D5F004E314C /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		B18319CA1BF00D5F004E314C /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ZMCalendarPicker/Resource/icon.png; sourceTree = "<group>"; };
 		B18319CF1BF00D9C004E314C /* NSDateComponents+DealDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDateComponents+DealDate.h"; sourceTree = "<group>"; };
 		B18319D01BF00D9C004E314C /* NSDateComponents+DealDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDateComponents+DealDate.m"; sourceTree = "<group>"; };
 		B18319D21BF00EAC004E314C /* UIColor+HEXString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HEXString.h"; sourceTree = "<group>"; };
@@ -129,7 +127,6 @@
 				B18319971BF00CBC004E314C /* ViewController.m */,
 				B18319991BF00CBC004E314C /* Main.storyboard */,
 				B183199C1BF00CBC004E314C /* Assets.xcassets */,
-				B183199E1BF00CBC004E314C /* LaunchScreen.storyboard */,
 				B18319A11BF00CBC004E314C /* Info.plist */,
 				B18319901BF00CBC004E314C /* Supporting Files */,
 			);
@@ -139,6 +136,7 @@
 		B18319901BF00CBC004E314C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B18319CA1BF00D5F004E314C /* icon.png */,
 				B18319911BF00CBC004E314C /* main.m */,
 			);
 			name = "Supporting Files";
@@ -193,7 +191,6 @@
 			children = (
 				B18319C81BF00D5F004E314C /* bt_next@2x.png */,
 				B18319C91BF00D5F004E314C /* bt_previous@2x.png */,
-				B18319CA1BF00D5F004E314C /* icon.png */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -302,7 +299,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B18319CD1BF00D5F004E314C /* bt_previous@2x.png in Resources */,
-				B18319A01BF00CBC004E314C /* LaunchScreen.storyboard in Resources */,
 				B18319CE1BF00D5F004E314C /* icon.png in Resources */,
 				B183199D1BF00CBC004E314C /* Assets.xcassets in Resources */,
 				B183199B1BF00CBC004E314C /* Main.storyboard in Resources */,
@@ -380,14 +376,6 @@
 				B183199A1BF00CBC004E314C /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		B183199E1BF00CBC004E314C /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B183199F1BF00CBC004E314C /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -477,7 +465,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = ZMCalendarPicker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Arron.ZMCalendarPicker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -488,7 +478,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = ZMCalendarPicker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Arron.ZMCalendarPicker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -562,6 +554,7 @@
 				B18319BC1BF00CBD004E314C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B18319BD1BF00CBD004E314C /* Build configuration list for PBXNativeTarget "ZMCalendarPickerTests" */ = {
 			isa = XCConfigurationList;
@@ -570,6 +563,7 @@
 				B18319BF1BF00CBD004E314C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B18319C01BF00CBD004E314C /* Build configuration list for PBXNativeTarget "ZMCalendarPickerUITests" */ = {
 			isa = XCConfigurationList;
@@ -578,6 +572,7 @@
 				B18319C21BF00CBD004E314C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

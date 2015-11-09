@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>A4807147-8BCF-4EA9-A704-96720DAB48EC</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ZMCalendarPicker</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>FECB63BAD37935BBB9378D0720FFEE4AF01868CB</key>
+		<string>https://github.com/zhuzhuf6/ZMCalendarPicker.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ZMCalendarPicker.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>FECB63BAD37935BBB9378D0720FFEE4AF01868CB</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/zhuzhuf6/ZMCalendarPicker.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>FECB63BAD37935BBB9378D0720FFEE4AF01868CB</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>FECB63BAD37935BBB9378D0720FFEE4AF01868CB</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ZMCalendarPicker</string>
+		</dict>
+	</array>
+</dict>
+</plist>
